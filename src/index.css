@@ -1,0 +1,165 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    --height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 0 16px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+header, footer {
+    height: var(--height);
+    flex-shrink: 0;
+    background-color: beige;
+}
+
+main {
+    flex-grow: 1;
+    background-color: #fff;
+    min-height: calc(100vh - 2*var(--height));
+    padding: 0 16px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px
+}
+
+.login-form input {
+    padding: 6px;
+    gap: 4px;
+}
+
+.login-btn {
+    margin-top: 16px;
+    padding: 6px;
+}
+
+.top-menu {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.active-btn, .btn {
+    padding: 4px;
+}
+
+.active-btn {
+    background-color: #fff;
+}
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+  }
+
+#modal .modal-content {
+    position: relative;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+    width: 500px;
+    max-width: 100%;
+    min-height: 180px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.modal-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+#modal .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;;
+}
+
+.status-button-action {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 10px 0;
+    border-bottom: 2px solid beige;
+}
+
+.pets-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 26px;
+    margin-top: 16px;;
+}
+
+.petcard {
+    border: 2px solid beige;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: beige;
+}
+
+.pet-details p{
+    margin: 4px
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
