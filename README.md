@@ -7,14 +7,13 @@ To run this project locally:
    To run e2e cypress test: npx cypress open
    Unit test: npm test
 ``` 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Scope of the project:
+   - Implemented login for the SPA in react context
+   - Have not implemented persistence login, (for demo purpose localstorage or browser storage can be implemented)
+   - For simplicity, max of 100 items are fetched from the API
+   - Most of the items are returning 404 images so in that case implemented onError to provide default image.
+   - User can update the status of the items. Once successfully updated user will be taken to updated status page.
+   - have implemeted one e2e test in cypress for login flow
+   - and one unit test for dashboard page
+   
