@@ -1,5 +1,10 @@
-# React + TypeScript + Vite
-
+# PetStore -> React + TypeScript + Vite
+To run this project locally:
+   Install node modules: npm i
+   Run local App: npm run dev
+   To run e2e cypress test: npx cypress open
+   Unit test: npm test
+   
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
